@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="ludo-club-wallpaper" id="club-wallpaper">
+        <img src="images/ludoclub.png" id="ludo-club">
+        <div class="button-wrap" id="ludo-club-btn">
+            <button class="button ludo-club-button" id="ludo-club-button">Let's play</button>
+        </div>
+    </div>
+    <div class="container">
+        <h1>LUDO GAME</h1>
+       
+        <div class="dices-container">
+            <div class="dice">
+                <p>Player 1</p>
+                <img class="dice-img" src="images/dice1.jpg" id="check1">
+                <h3>Total score : </h3>
+                <p id="sumFirstPlayer"></p>
+               </div>
+               <div class="dice">
+                <p>Player 2</p>
+                <img class="dice-img" src="images/dice1.jpg" id="check2">
+                <h3>Total score : </h3>
+                <p id="sumSecondPlayer"></p>
+               </div>
+
+               <div class="button-container">
+                <button onclick="ludoGame()"> Roll the dice</button>
+                <button onclick="resetGame()">Reset game</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="container-present">
+        <h2>Would you like to take your reward?</h2>
+
+        <!-- <div class="radio-buttons">
+            <div>
+                <input type="radio" id="checkbox" class="radio-button" name="present" value="yes" >
+                <label for="yes">Yes, sure :D</label>
+              </div>
+              
+              <div>
+                <input type="radio" id="checkbox" class="radio-button" name="present" value="no">
+                <label for="no">No, I don't want it</label>
+              </div>
+        </div> -->
+
+        <div id="reject-present"></div>
+        <input type="button" id="submit" class="submit-reward" value="Get Reward">
+    </div>
+
+    <div id="container-reward">
+        <iframe src="https://giphy.com/embed/K3Sbp8fOgKye4" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        <button id="close-gif" onclick="closePresent()">That's enough</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
+
